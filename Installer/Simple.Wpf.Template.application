@@ -1,21 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <assemblyIdentity name="Simple.Wpf.Template.application" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <assemblyIdentity name="Simple.Wpf.Template.application" version="1.0.0.2" publicKeyToken="11715ec558e62286" language="neutral" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <description asmv2:publisher="Simple.Wpf.Template" asmv2:product="Simple.Wpf.Template" xmlns="urn:schemas-microsoft-com:asm.v1" />
-  <deployment install="true" mapFileExtensions="true" />
+  <deployment install="true" mapFileExtensions="true">
+    <subscription>
+      <update>
+        <beforeApplicationStartup />
+      </update>
+    </subscription>
+    <deploymentProvider codebase="https://github.com/winbeam/ht1/blob/main/Installer/Simple.Wpf.Template.application" />
+  </deployment>
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Application Files\Simple.Wpf.Template_1_0_0_0\Simple.Wpf.Template.dll.manifest" size="12345">
-      <assemblyIdentity name="Simple.Wpf.Template.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+    <dependentAssembly dependencyType="install" codebase="Application Files\Simple.Wpf.Template_1_0_0_2\Simple.Wpf.Template.dll.manifest" size="15811">
+      <assemblyIdentity name="Simple.Wpf.Template.exe" version="1.0.0.2" publicKeyToken="11715ec558e62286" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FeUr7D3NPGM1Se2EOLYCEy2A3F3JT1Xf7Ai3DXm9PjM=</dsig:DigestValue>
+        <dsig:DigestValue>WYaNCUbYiyr8tQiuXeSLSb1Pmo0gAcfX1LtyF6kHDqw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-</asmv1:assembly>
+<publisherIdentity name="CN=DT-SST-SSB\SSB" issuerKeyHash="be42b84229cc976057482830665094f4309ef48f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>HkAIiq3cmrWqBdMkkoqHls1L7GE0FQKDVc8L1n0S1EU=</DigestValue></Reference></SignedInfo><SignatureValue>UaQsGvViL4FG0XO794hx6NZDrverCxXFiNPCFwmcqG58yYRj9YsgUBL2Fn9/ex+2dMQ0j6HBq+T+FwSHZpr5SKLFd1icRKECPYgyeN5J+FFVbGXIdhrq4SgY8o8sQWHfRuyjcMMQuDX0ICLC4TQ1Nc9ENAa20piiL+r7xTA1Iqc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>th00SUUyWpIIOABOTj1/nlOJz6gjCb9Pl4sqqcbFwoNwWQqkWKJj0u+U3B3l4ev5hcNjsxvEMYVc9o+8asIcHOktvXud/pcCv0VUH71BqZomdmoeQ5Zdv9BHvV3gDmaWvm4LFNfIuEzcfABVgCMrHrisgfD2ir1BAVSYzYPrp00=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="45d4127dd60bcf558302153461ec4bcd96878a9224d305aab59adcad8a08401e" Description="" Url=""><as:assemblyIdentity name="Simple.Wpf.Template.application" version="1.0.0.2" publicKeyToken="11715ec558e62286" language="neutral" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DT-SST-SSB\SSB</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>DkvTHiEY+4Qh5Iik3S1/X6p0VzySnE71BCZi79qW3+I=</DigestValue></Reference></SignedInfo><SignatureValue>BDR1FSCL8ZP+EGRbstJac+4qGqxLxVMCQ0bDHFMdDxYCLDzAD8b1DagSM9q2+52gF5IDyFH1kbCdk0EfZqfE29UyClk8QhiWv48d32YeuNJfMPODKhFkNwLZRsfgyJO8JvJzFpzIJTWAvmoKfL24cmd+8pOzlYZyCRo9xn8lswg=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>th00SUUyWpIIOABOTj1/nlOJz6gjCb9Pl4sqqcbFwoNwWQqkWKJj0u+U3B3l4ev5hcNjsxvEMYVc9o+8asIcHOktvXud/pcCv0VUH71BqZomdmoeQ5Zdv9BHvV3gDmaWvm4LFNfIuEzcfABVgCMrHrisgfD2ir1BAVSYzYPrp00=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQP3HqRcBAwZJAzWB+3R1r2DANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwARABUAC0AUwBTAFQALQBTAFMAQgBcAFMAUwBCMB4XDTIyMDcwNzA3MjM1M1oXDTIzMDcwNzEzMjM1M1owJzElMCMGA1UEAx4cAEQAVAAtAFMAUwBUAC0AUwBTAEIAXABTAFMAQjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAth00SUUyWpIIOABOTj1/nlOJz6gjCb9Pl4sqqcbFwoNwWQqkWKJj0u+U3B3l4ev5hcNjsxvEMYVc9o+8asIcHOktvXud/pcCv0VUH71BqZomdmoeQ5Zdv9BHvV3gDmaWvm4LFNfIuEzcfABVgCMrHrisgfD2ir1BAVSYzYPrp00CAwEAATANBgkqhkiG9w0BAQsFAAOBgQBxckgl7uX2J4OvDkTjYX6SSkrtEhDmyB3vocf7tP8Fz2hX6oWEFNCYtY6hEOloSKPoy0k2Y5N3vOVlGXVIuT7d8pjRX61F4I0StvMOwuzI5OzwjNUS6in9ecV8fL6jr5JnEarty59lGJeZ2zW7pF5J765NtCUx3EcEkpf5gaHnPg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
